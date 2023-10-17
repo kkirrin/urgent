@@ -1,0 +1,25 @@
+.mobile-menu {
+    transition: transform 0.8s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 377px;
+    height: 100%;
+    overflow: auto;
+    padding: 80px 56px 100px;
+    background-color: cadetblue;
+
+    transform: translateX(100%);
+}
+
+.mobile-menu.is-active {
+    z-index: 20;
+    transform: translateX(0);
+}
+
+@media (max-width: 767px) {
+    .mobile-menu {
+        width: 100%;
+        padding: 80px 20px 100px;
+    }
+}
