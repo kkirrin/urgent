@@ -11,6 +11,7 @@
 @import './block/button.css';
 @import './block/hero.css';
 @import './block/animation.css';
+@import './block/about.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -93,4 +94,9 @@
 
 .border-right-radius {
     border-radius: 2px 2px 100px 2px;
+}
+
+.test {
+    background-color: #fff;
+    padding: 20px;
 }
