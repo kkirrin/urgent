@@ -15,7 +15,7 @@
 
 <body>
     <div class="h-screen grid grid-rows-[auto_1fr_auto]">
-        <header class="z-10 w-full md-28 transition-colors">
+        <header class="z-10 w-full md-28 transition-colors fixed">
             <div class="container py-5 gap-5 flex items-center justify-between  md:pt-2">
                 <div class="flex items-center">
                     <img loading="lazy" src="./src/img/logo.svg" width="45" height="42" alt="лого">
@@ -26,7 +26,7 @@
                     <a href="https://wa.me/79147040414">
                         <img src="./src/img/whatsapp.svg" width="48" height="48" alt="whatsApp">
                     </a>
-                    <a class="header-call-button border-header" href="tel:+0000000000">Проконсультироваться</a>
+                    <a class="header-call-button border-header button" href="tel:+0000000000">Проконсультироваться</a>
 
                     <button class="btn-close-menu">
                         <svg viewBox="0 0 64 48">
@@ -82,6 +82,42 @@
         <main>
             <h1 class="visually-hidden">Urgent очистители</h1>
 
+            <section class="hero">
+                <div class="container relative">
+                    <span class="hero__text">Очистители</span>
+                    <h2 class="text-[42px] font-bold leading-tight uppercase max-w-xl mb-5 relative"> для
+                        вашей
+                        одежды,
+                        обуви, аксессуаров и&nbsp;мебели</h2>
+                    <p class="text-2xl font-semibold text-green mb-5">чистота в каждом движении</p>
+                    <a class="px-8 border-header-right button-right button button--blue" href="#">Посмотреть каталог</a>
+                    <ul class="flex gap-5">
+                        <li class="py-7 px-16 bg-white border-left-radius">
+                            <p class="text-blue text-5xl font-extrabold flex"><span
+                                    class="counter-years block w-16">10</span>
+                                лет
+                            </p>
+                            <p class="font-medium">на рынке</p>
+                        </li>
+                        <li class="py-7 px-16 bg-white">
+                            <p class="text-blue text-5xl font-extrabold flex"><span
+                                    class="counter-partners block w-24">100</span>+</p>
+                            <p class="font-medium">партнеров</p>
+                        </li>
+                        <li class="py-7 px-16 bg-white border-right-radius">
+                            <p class="text-blue text-5xl font-extrabold">
+                                <span class="counter-place">3</span>
+                                площадки
+                            </p>
+                            <p class="font-medium">на маркетплейсах</p>
+                        </li>
+                    </ul>
+                    <div class="absolute top-0 right-32 flex">
+                        <img class="animation-left" src="./src/img/logo-left.svg" height="340" alt="">
+                        <img class="animation-right" src="./src/img/logo-right.svg" height="340" alt="">
+                    </div>
+                </div>
+            </section>
 
         </main>
 

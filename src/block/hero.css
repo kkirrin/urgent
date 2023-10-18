@@ -1,0 +1,19 @@
+.hero {
+    padding: 180px 0 70px;
+    background-image: url('../src/img/bg/bg.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.hero__text {
+    position: relative;
+    display: inline-block;
+    background-color: #2CC304;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transform: rotate(-5deg);
+    line-height: 1;
+}

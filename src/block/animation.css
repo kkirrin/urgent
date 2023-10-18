@@ -1,0 +1,31 @@
+.animation-left {
+    position: relative;
+    animation: unionLeft 0.7s linear alternate forwards;
+    left: -100px;
+}
+
+.animation-right {
+    position: relative;
+    animation: unionRight 0.7s linear alternate forwards;
+    right: -100px;
+}
+
+@keyframes unionLeft {
+    from {
+        transform: translateX() translateY();
+    }
+
+    to {
+        transform: translateX(100px) translateY(0);
+    }
+}
+
+@keyframes unionRight {
+    from {
+        transform: translateX() translateY();
+    }
+
+    to {
+        transform: translateX(-100px) translateY(0);
+    }
+}

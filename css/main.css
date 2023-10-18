@@ -5,7 +5,7 @@
 /* Импорт кастомных стилей для компонентов */
 
 .btn-close-menu {
-  --color: #262626;
+  --color: #202020;
   width: 36px;
   height: 36px;
   padding: 0;
@@ -821,6 +821,118 @@ button.swiper-pagination-bullet{
      object-fit: cover;
 }
 
+.button {
+  display: inline-block;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  color: #2CC304;
+  box-shadow: inset 0px 0px 3px #2CC304;
+}
+
+.button:before {
+  content: '';
+  display: inline-block;
+  transform: translateY(50%);
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  border-radius: 50% 50% 50% 30px;
+  background-color: #2CC304;
+  z-index: -1;
+  transition: transform ease 1s;
+}
+
+.button:hover:before {
+  transform: translateY(-45%);
+}
+
+.button:hover {
+  color: white;
+  transition: color 0.1s ease;
+  transition-delay: 0.2s;
+}
+
+.button-right::before {
+  width: 100%;
+  border-radius: 50% 50% 0 50%;
+}
+
+.button--blue {
+  border: 2px solid #090952;
+  background-color: #090952;
+  color: #ffffff;
+}
+
+.button--blue:before {
+  background-color: #ffffff;
+}
+
+.button--blue:hover {
+  color: #090952;
+}
+
+.hero {
+  padding: 180px 0 70px;
+  background-image: url('../src/img/bg/bg.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.hero__text {
+  position: relative;
+  display: inline-block;
+  background-color: #2CC304;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transform: rotate(-5deg);
+  line-height: 1;
+}
+
+.animation-left {
+  position: relative;
+  animation: unionLeft 0.7s linear alternate forwards;
+  left: -100px;
+}
+
+.animation-right {
+  position: relative;
+  animation: unionRight 0.7s linear alternate forwards;
+  right: -100px;
+}
+
+@keyframes unionLeft {
+  from {
+    transform: translateX() translateY();
+  }
+
+  to {
+    transform: translateX(100px) translateY(0);
+  }
+}
+
+@keyframes unionRight {
+  from {
+    transform: translateX() translateY();
+  }
+
+  to {
+    transform: translateX(-100px) translateY(0);
+  }
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -1265,6 +1377,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #202020;
   font-weight: 400;
+  background-color: #EDEDED;
 }
 
 *, ::before, ::after{
@@ -1403,6 +1516,30 @@ body {
   max-width: 1440px;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.right-52{
+  right: 13rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.right-32{
+  right: 8rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1439,8 +1576,20 @@ body {
   height: 100vh;
 }
 
+.w-16{
+  width: 4rem;
+}
+
+.w-24{
+  width: 6rem;
+}
+
 .w-full{
   width: 100%;
+}
+
+.max-w-xl{
+  max-width: 36rem;
 }
 
 .grid-rows-\[auto_1fr_auto\]{
@@ -1471,6 +1620,21 @@ body {
   overflow: hidden;
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1479,6 +1643,11 @@ body {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-7{
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .pb-11{
@@ -1493,13 +1662,57 @@ body {
   padding-top: 1rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-\[42px\]{
+  font-size: 42px;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
+.font-extrabold{
+  font-weight: 800;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
 .font-semibold{
   font-weight: 600;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.leading-tight{
+  line-height: 1.25;
+}
+
+.text-blue{
+  --tw-text-opacity: 1;
+  color: rgb(9 9 82 / var(--tw-text-opacity));
+}
+
+.text-green{
+  --tw-text-opacity: 1;
+  color: rgb(44 195 4 / var(--tw-text-opacity));
 }
 
 .text-main-black{
@@ -1549,11 +1762,6 @@ body {
   .header-call-button{
     display: block;
   }
-}
-
-.header-call-button:hover {
-  background-color: transparent;
-  color: #262626;
 }
 
 .popup-link{
@@ -1615,6 +1823,18 @@ body {
 
 .border-header {
   border-radius: 30px 30px 30px 0px;
+}
+
+.border-header-right {
+  border-radius: 30px 30px 0px 30px;
+}
+
+.border-left-radius {
+  border-radius: 100px 2px 2px 2px;
+}
+
+.border-right-radius {
+  border-radius: 2px 2px 100px 2px;
 }
 
 @media (min-width: 1024px){
