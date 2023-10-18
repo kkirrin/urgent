@@ -64,9 +64,13 @@
 }
 
 .about__btn-1 {
-    top: -53px;
-    left: 42%;
+    /* top: -53px;
+    left: 42%; */
+
+    top: 40%;
+    left: 40%;
     transform: rotate(42.449deg);
+    animation: spiralMove1 2s forwards;
 }
 
 .about__btn-1 svg {
@@ -77,6 +81,7 @@
     top: 25%;
     left: 93%;
     transform: rotate(106.337deg);
+    animation: spiralMove2 6s forwards;
 }
 
 .about__btn-2 svg {
@@ -121,4 +126,30 @@
 
 .about__btn-6 svg {
     transform: rotate(15deg);
+}
+
+
+@keyframes spiralMove1 {
+    0% {
+        transform: rotate(0deg) translateX(30px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(30px) rotate(-360deg);
+    }
+
+}
+
+@keyframes spiralMove2 {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        top: 25%;
+        left: 93%;
+        transform: rotate(106.337deg);
+    }
 }
