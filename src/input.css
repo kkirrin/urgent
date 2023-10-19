@@ -12,6 +12,7 @@
 @import './block/hero.css';
 @import './block/animation.css';
 @import './block/about.css';
+@import './block/features.css';
 
 /* Импорт TailWind */
 @tailwind base;

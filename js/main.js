@@ -5,6 +5,7 @@ import { initScrollToTop } from "./module/scroll-to-top.js";
 import { initScroll } from "./module/scroll.js";
 import { initCounterAnimation } from "./module/counter-animation.js";
 import { initWheel } from "./module/wheel.js";
+import { initParalax } from "./module/mouse-paralax.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -17,6 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initCounterAnimation();
     initWheel();
     baguetteBox.run('.gallery-wrapper');
+
+    initParalax();
 
     // DOMContentLoaded
 });
