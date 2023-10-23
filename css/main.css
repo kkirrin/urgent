@@ -1558,6 +1558,52 @@ button.swiper-pagination-bullet{
   pointer-events: all;
 }
 
+.commercial {
+  padding: 70px 0;
+}
+
+.commercial__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.commercial__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.commercial__buttons a {
+  margin: 0;
+  width: 100%;
+}
+
+.commercial__buttons .button {
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.commercial__img {
+  display: flex;
+}
+
+.commercial__img img {
+  flex: 0 0 auto;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.commercial__img img:nth-child(1) {
+  position: relative;
+  z-index: 1;
+}
+
+.commercial__img img:nth-child(2) {
+  margin-left: -90px;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -2181,6 +2227,10 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -2307,6 +2357,10 @@ body {
   padding-top: 1rem;
 }
 
+.pl-10{
+  padding-left: 2.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -2319,6 +2373,11 @@ body {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-xl{

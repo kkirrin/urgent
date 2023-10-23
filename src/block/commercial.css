@@ -1,0 +1,44 @@
+.commercial {
+    padding: 70px 0;
+}
+
+.commercial__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.commercial__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.commercial__buttons a {
+    margin: 0;
+    width: 100%;
+}
+
+.commercial__buttons .button {
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.commercial__img {
+    display: flex;
+}
+
+.commercial__img img {
+    flex: 0 0 auto;
+    height: min-content;
+}
+
+.commercial__img img:nth-child(1) {
+    position: relative;
+    z-index: 1;
+}
+
+.commercial__img img:nth-child(2) {
+    margin-left: -90px;
+}
