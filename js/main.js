@@ -21,7 +21,9 @@ window.addEventListener('DOMContentLoaded', () => {
     initFlexSlider();
     baguetteBox.run('.gallery-wrapper');
 
-    initParalax();
+    if (window.innerWidth > 767) {
+        initParalax();
+    }
 
     // DOMContentLoaded
 });
