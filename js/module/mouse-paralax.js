@@ -38,7 +38,7 @@ export const initParalax = () => {
     }
 
     let elements = document.querySelectorAll('.mouse-parralax');
-    console.log(elements);
+
     elements.forEach(function (el) {
         mouseParralax(el);
     });
