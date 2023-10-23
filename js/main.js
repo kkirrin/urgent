@@ -6,6 +6,7 @@ import { initScroll } from "./module/scroll.js";
 import { initCounterAnimation } from "./module/counter-animation.js";
 import { initWheel } from "./module/wheel.js";
 import { initParalax } from "./module/mouse-paralax.js";
+import { initFlexSlider } from "./module/flex-slider.js";
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initScroll();
     initCounterAnimation();
     initWheel();
+    initFlexSlider();
     baguetteBox.run('.gallery-wrapper');
 
     initParalax();
