@@ -35,7 +35,7 @@ body {
         .pin-wrap {
             display: flex;
             height: 100vh;
-            width: 160vmax;
+            width: 130vmax;
             justify-content: flex-start;
             align-items: center;
             padding: 70px 10vw;
@@ -51,5 +51,46 @@ body {
         .pin-wrap img {
             max-height: 400px;
         }
+    }
+}
+
+.swiper {
+    width: 0;
+    min-width: 100%;
+}
+
+.swiper-item {
+    height: 350px;
+}
+
+.swiper-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sectionPin {
+    position: relative;
+}
+
+.sectionPin__title {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.sectionPin__span {
+    color: #2CC304;
+}
+
+@media(max-width: 767px) {
+    .sectionPin__title {
+        font-size: 24px;
     }
 }

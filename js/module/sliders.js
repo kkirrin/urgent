@@ -1,34 +1,52 @@
 export const initSlider = () => {
+    // слайдер "с кем мы сотрудничаем"
+    const exclusiveSlider = document.querySelector('.swiper');
 
-    // слайдер "Отзывы"
-    const feedback = document.querySelector('.feedback');
-    if (feedback) {
-        const feedback = new Swiper('.feedback', {
-            loop: true,
-            spaceBetween: 30,
-            breakpoints: {
-                374: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                767: {
-                    slidesPerView: 2,
-                },
-                1023: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
+    if (exclusiveSlider) {
+        const sliderItems = document.querySelectorAll('.swiper-item');
+        console.log('количество items', sliderItems);
 
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+        if (window.innerWidth < 1023) {
+            sliderItems.forEach((slide) => {
+                slide.classList.add('swiper-slide');
+            });
 
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-        });
+            console.log('количество items', sliderItems);
+        }
+
+        let breakpoint = window.matchMedia('(min-width:1023px)');
+        let swiper;
+
+        const breakpointChecker = function () {
+            if (breakpoint.matches === true) {
+
+                if (swiper !== undefined) {
+                    swiper.destroy(true, true);
+                } return;
+
+            } else if (breakpoint.matches === false) {
+                // eslint-disable-next-line consistent-return
+                return exclusiveSliderInit();
+            }
+        };
+
+        const exclusiveSliderInit = function () {
+            swiper = new Swiper(exclusiveSlider, {
+                loop: true,
+                spaceBetween: 30,
+                init: true,
+                slidesPerView: 1.5,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 20,
+                    },
+                },
+
+            });
+        };
+
+        breakpoint.addEventListener('change', breakpointChecker);
+        breakpointChecker();
     }
 }

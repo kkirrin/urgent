@@ -36,7 +36,6 @@ const artists = [
 
 
 export const initFlexSlider = () => {
-    console.log('flexSlider');
 
     const artistsList = document.getElementById('artistsList');
 
