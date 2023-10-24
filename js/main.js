@@ -7,6 +7,7 @@ import { initCounterAnimation } from "./module/counter-animation.js";
 import { initWheel } from "./module/wheel.js";
 import { initParalax } from "./module/mouse-paralax.js";
 import { initFlexSlider } from "./module/flex-slider.js";
+import { initAccordion } from "./module/accordion.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initWheel();
     initFlexSlider();
     baguetteBox.run('.gallery-wrapper');
+    initAccordion();
 
     if (window.innerWidth > 767) {
         initParalax();
