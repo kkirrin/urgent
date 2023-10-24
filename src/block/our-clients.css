@@ -26,7 +26,6 @@ body {
         .pin-wrap-sticky {
             /* Stick to Top */
             height: 100vh;
-            height: 50vh;
             position: sticky;
             top: 0;
             width: 100vw;
@@ -36,13 +35,11 @@ body {
         .pin-wrap {
             display: flex;
             height: 100vh;
-            height: 50vh;
-            width: 280vmax;
-            width: 200vmax;
+            width: 160vmax;
             justify-content: flex-start;
             align-items: center;
             padding: 70px 10vw;
-            gap: 80px;
+            gap: 20px;
             /* Hook animation */
             will-change: transform;
             animation: linear move forwards;
