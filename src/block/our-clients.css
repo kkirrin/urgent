@@ -4,6 +4,20 @@ body {
     width: 100%;
 }
 
+.sectionPin {
+    position: relative;
+}
+
+.sectionPin-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(9, 9, 82, 1) 14%, rgba(237, 237, 237, 1) 100%);
+}
+
+
 @media (min-width: 1023px) {
     @supports(animation-timeline: view()) {
         @keyframes move {

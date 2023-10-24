@@ -1,11 +1,17 @@
 .marketplace {
     padding: 70px 0;
+    min-height: 600px;
 }
 
 .marketplace__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+}
+
+.marketplace__images {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 .marketplace__title {
@@ -66,4 +72,33 @@
 
 .marketplace__buttons .button-right::before {
     border-radius: 50% 50% 0 0;
+}
+
+@media(max-width: 767px) {
+    .marketplace__wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .marketplace__images {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .marketplace .mouse-parralax {
+        margin-top: 0;
+    }
+
+    .item-paralax-1 {
+        transform: translate3d(0, 0, 0) !important;
+    }
+
+    .marketplace__title {
+        font-size: 24px;
+    }
+
+    .marketplace__subtitle {
+        width: 197px;
+    }
+
 }
