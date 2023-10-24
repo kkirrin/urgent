@@ -16,6 +16,7 @@
 @import './block/use.css';
 @import './block/commercial.css';
 @import './block/our-clients.css';
+@import './block/marketplace.css';
 
 /* Импорт TailWind */
 @tailwind base;
