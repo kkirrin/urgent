@@ -1760,8 +1760,54 @@ body {
 }
 
 @media(max-width: 767px) {
+  .pin-wrap-sticky {
+    padding: 70px 0 30px;
+  }
+
   .sectionPin__title {
     font-size: 24px;
+    top: 0;
+    left: 25px;
+  }
+}
+
+@media(min-width: 768px) {
+}
+
+@media(min-width: 1023px) {
+  .swiper-item:nth-child(1) {
+    -webkit-clip-path: polygon(0 1%, 100% 1%, 80% 100%, 18% 100%);
+            clip-path: polygon(0 1%, 100% 1%, 80% 100%, 18% 100%);
+  }
+
+  .swiper-item:nth-child(2) {
+    -webkit-clip-path: polygon(60% 0, 18% 100%, 100% 100%);
+            clip-path: polygon(60% 0, 18% 100%, 100% 100%);
+    margin-left: -210px;
+  }
+
+  .swiper-item:nth-child(3) {
+    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 30% 100%);
+            clip-path: polygon(0 0, 75% 0, 100% 100%, 30% 100%);
+    margin-left: -120px;
+  }
+
+  .swiper-item:nth-child(4) {
+    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 30% 100%);
+            clip-path: polygon(0 0, 75% 0, 100% 100%, 30% 100%);
+    margin-left: -100px;
+  }
+
+  .swiper-item:nth-child(5) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 41% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 41% 100%);
+    margin-left: -60px;
+  }
+
+  .swiper-item:nth-child(6) {
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0 99%, 0 50%, 0% 0%);
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0 99%, 0 50%, 0% 0%);
+    margin-left: 20px;
   }
 }
 

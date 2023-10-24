@@ -41,6 +41,16 @@ export const initSlider = () => {
                         slidesPerView: 1.5,
                         spaceBetween: 20,
                     },
+
+                    600: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 30,
+                    },
+
+                    767: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 30,
+                    },
                 },
 
             });
