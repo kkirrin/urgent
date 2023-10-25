@@ -18,6 +18,7 @@
 @import './block/our-clients.css';
 @import './block/marketplace.css';
 @import './block/faq.css';
+@import './block/form-section.css';
 
 /* Импорт TailWind */
 @tailwind base;

@@ -8,6 +8,8 @@ import { initWheel } from "./module/wheel.js";
 import { initParalax } from "./module/mouse-paralax.js";
 import { initFlexSlider } from "./module/flex-slider.js";
 import { initAccordion } from "./module/accordion.js";
+import { initValidation } from "./module/validation.js";
+import { initMask } from "./module/mask.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initFlexSlider();
     baguetteBox.run('.gallery-wrapper');
     initAccordion();
+    initValidation();
+    initMask();
 
     if (window.innerWidth > 767) {
         initParalax();

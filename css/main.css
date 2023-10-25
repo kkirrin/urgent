@@ -2070,6 +2070,97 @@ body {
   }
 }
 
+.form-section {
+  padding: 70px 0;
+  color: #202020;
+}
+
+.form-section__title {
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.form-section__text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.form-wrapper {
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.form__input {
+  padding: 12px 30px;
+  border-radius: 40px 40px 40px 2px;
+  background: #FFF;
+  font-size: 16px;
+  height: 45px;
+  width: 370px;
+}
+
+.form__button {
+  background-color: #090952 !important;
+  color: #FFF;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 30px 30px 0px 30px;
+  font-size: 16px;
+  width: 370px;
+}
+
+.form__button.button::before {
+  border-radius: 50% 50% 0 0;
+}
+
+.form-section__descriptions {
+  font-size: 12px;
+  max-width: 380px;
+}
+
+.form-section__descriptions a {
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .form-section {
+    padding: 55px 0;
+  }
+
+  .form-section__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-section__text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form-section__descriptions {
+    font-size: 10px;
+  }
+
+  .form-section__descriptions a {
+    font-size: 10px;
+  }
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -2884,6 +2975,10 @@ body {
 .text-main-black{
   --tw-text-opacity: 1;
   color: rgb(32 32 32 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .transition-colors{
