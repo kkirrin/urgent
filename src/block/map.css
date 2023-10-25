@@ -1,3 +1,52 @@
 .map {
     padding: 70px 0;
 }
+
+.map__img {
+    position: relative;
+}
+
+
+.point-start {
+    position: absolute;
+    bottom: 114px;
+    right: 209px;
+}
+
+.point-1 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    bottom: 430px;
+    right: 365px;
+    offset-path: path('M76.6111 308.815C76.6112 293.637 -53.0716 172.137 27.9284 1.13721');
+    offset-distance: 0%;
+    animation: way-1 11s ease infinite;
+}
+
+.point-1-way {
+    position: absolute;
+    bottom: 143px;
+    right: 306px;
+}
+
+@keyframes way-1 {
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: 24;
+        /* Двойное значение stroke-dasharray */
+    }
+}
+
+.point-1-way svg path {
+    animation: dash 1.5s linear infinite reverse;
+}
