@@ -2,39 +2,128 @@
     padding: 70px 0;
 }
 
+.map__wrapper {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
 .map__img {
     position: relative;
+    width: 1050px;
 }
+
+.map__descriptions {
+    display: block;
+}
+
+.map__contact {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1420px) {
+    .map__wrapper {
+        display: block;
+    }
+
+    .map__img {
+        margin: 0 auto;
+    }
+}
+
 
 
 .point-start {
     position: absolute;
-    bottom: 114px;
-    right: 209px;
+    bottom: 20px;
+    right: 5px;
 }
 
 .point-1 {
     position: absolute;
-    width: 22px;
-    height: 22px;
-    bottom: 430px;
-    right: 365px;
+    bottom: 338px;
+    right: 161px;
     offset-path: path('M76.6111 308.815C76.6112 293.637 -53.0716 172.137 27.9284 1.13721');
     offset-distance: 0%;
-    animation: way-1 11s ease infinite;
+    animation: way 8s ease infinite;
 }
 
 .point-1-way {
     position: absolute;
-    bottom: 143px;
-    right: 306px;
+    bottom: 50px;
+    right: 105px;
 }
 
-@keyframes way-1 {
+.point-2 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    bottom: 315px;
+    right: 892px;
+    offset-path: path('M806.611 285.815C708.837 79.5876 328.966 -100.625 1.92871 69.6372');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+}
+
+.point-2-way {
+    position: absolute;
+    bottom: 50px;
+    right: 105px;
+}
+
+.point-3 {
+    position: absolute;
+    bottom: 82px;
+    right: 331px;
+    offset-path: path('M247.611 54.816C172.314 -17.1138 57.4287 -16.3628 1.92871 54.8161');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+}
+
+.point-3-way {
+    position: absolute;
+    bottom: 50px;
+    right: 105px;
+}
+
+.point-4 {
+    position: absolute;
+    bottom: 231px;
+    right: 851px;
+    offset-path: path('M768.611 202.815C711.857 61.2084 284.929 -122.863 1.42871 119.137');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+}
+
+.point-4-way {
+    position: absolute;
+    bottom: 50px;
+    right: 105px;
+}
+
+.point-5 {
+    position: absolute;
+    bottom: 136px;
+    right: 536px;
+    offset-path: path('M452.611 108.816C331.799 -27.1719 141.929 -31.3628 1.92871 80.1372');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+}
+
+.point-5-way {
+    position: absolute;
+    bottom: 50px;
+    right: 105px;
+}
+
+
+@keyframes way {
     100% {
         offset-distance: 100%;
     }
 }
+
 
 @keyframes dash {
     from {
@@ -47,6 +136,10 @@
     }
 }
 
-.point-1-way svg path {
+.point-1-way svg path,
+.point-2-way svg path,
+.point-3-way svg path,
+.point-4-way svg path,
+.point-5-way svg path {
     animation: dash 1.5s linear infinite reverse;
 }
