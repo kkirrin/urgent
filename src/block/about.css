@@ -65,10 +65,10 @@
 
 .about__wheel-inner {
     position: absolute;
-    animation: rotate 5s ease 1 forwards;
+    animation: spin 5s ease 1 forwards;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     0% {
         width: 50px;
         height: 50px;
@@ -79,66 +79,161 @@
         height: 500px;
         transform: rotate(360deg);
     }
+} */
+
+@keyframes spin {
+    0% {
+        offset-distance: 0;
+    }
+
+    100% {
+        offset-distance: 75%;
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        offset-distance: 0;
+    }
+
+    100% {
+        offset-distance: 90%;
+    }
+}
+
+@keyframes spin3 {
+    0% {
+        offset-distance: 0;
+    }
+
+    100% {
+        offset-distance: 105%;
+    }
+}
+
+@keyframes spin4 {
+    0% {
+        offset-distance: 0;
+    }
+
+    100% {
+        offset-distance: 125%;
+    }
+}
+
+@keyframes spin5 {
+    0% {
+        offset-distance: 0;
+    }
+
+    100% {
+        offset-distance: 145%;
+    }
+}
+
+@keyframes spin6 {
+    0% {
+        offset-distance: 0;
+    }
+
+    100% {
+        offset-distance: 160%;
+    }
+}
+
+@keyframes expandCircle {
+    0% {
+        offset-path: circle(5px at center);
+    }
+
+    100% {
+        offset-path: circle(300px at center);
+    }
 }
 
 .about__btn-1 {
-    top: -53px;
-    left: 42%;
     transform: rotate(42.449deg);
+    offset-path: circle(5px at center);
+    animation: spin 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace;
+    position: absolute;
+    inset: 0;
 }
 
 .about__btn-1 svg {
-    transform: rotate(288deg);
+    transform: rotate(289deg);
 }
 
 .about__btn-2 {
-    top: 25%;
-    left: 93%;
-    transform: rotate(106.337deg);
+    transform: rotate(46deg);
+    offset-path: circle(5px at center);
+    animation: spin2 2s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace;
+    position: absolute;
+    inset: 0;
 }
 
 .about__btn-2 svg {
-    transform: rotate(254deg);
+    transform: rotate(260deg);
 }
 
 .about__btn-3 {
-    top: 75%;
-    left: 85%;
-    transform: rotate(171.17deg);
+    position: absolute;
+    transform: rotate(40deg);
+    offset-path: circle(5px at center);
+    offset-path: circle(5px at center);
+    animation: spin3 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace;
+    inset: 0;
 }
 
 .about__btn-3 svg {
-    transform: rotate(185deg);
+    transform: rotate(210deg);
 }
 
 .about__btn-4 {
-    bottom: -50px;
-    left: 45%;
-    transform: rotate(224deg);
+    transform: rotate(40deg);
+    offset-path: circle(5px at center);
+    offset-path: circle(5px at center);
+    animation: spin4 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace;
+    position: absolute;
+    inset: 0;
 }
 
 .about__btn-4 svg {
-    transform: rotate(320deg);
+    transform: rotate(140deg);
 }
 
 .about__btn-5 {
     bottom: 20%;
     left: -23px;
-    transform: rotate(295deg);
+    transform: rotate(40deg);
+    offset-path: circle(5px at center);
+    offset-path: circle(5px at center);
+    animation: spin5 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace;
+    position: absolute;
+    inset: 0;
 }
 
 .about__btn-5 svg {
-    transform: rotate(75deg);
+    transform: rotate(90deg);
 }
 
+
 .about__btn-6 {
-    top: 20%;
-    left: -29px;
-    transform: rotate(343deg);
+    transform: rotate(40deg);
+    offset-path: circle(5px at center);
+    offset-path: circle(5px at center);
+    animation: spin6 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace;
+    position: absolute;
+    inset: 0;
 }
 
 .about__btn-6 svg {
-    transform: rotate(15deg);
+    transform: rotate(16deg);
 }
 
 .about__list {
