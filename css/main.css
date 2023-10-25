@@ -2161,6 +2161,10 @@ body {
   }
 }
 
+.map {
+  padding: 70px 0;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
