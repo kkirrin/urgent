@@ -2262,7 +2262,7 @@ body {
 
 .map__img {
   position: relative;
-  width: 1050px;
+  max-width: 1050px;
 }
 
 .map__descriptions {
@@ -2391,6 +2391,157 @@ body {
 .point-4-way svg path,
 .point-5-way svg path {
   animation: dash 1.5s linear infinite reverse;
+}
+
+@media(max-width: 1023px) {
+  .point-2-way svg path {
+    transform: scale(0.5) translate(802px, 284px);
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    bottom: 454px;
+    right: 1289px;
+    offset-path: path('M1205.3055 426.9075C1156.4185 323.7938 966.483 233.6875 802.964355 318.8186');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+  }
+
+  .point-4-way svg path {
+    transform: scale(0.8) translate(190px, 58px);
+  }
+
+  .point-4 {
+    position: absolute;
+    bottom: 189px;
+    right: 698px;
+    offset-path: path('M614.8888 162.252C569.4856 48.96672 227.9432 -98.2904 1.142968 95.3096');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+  }
+}
+
+@media(max-width: 767px) {
+  .map__contact {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .point-1-way svg path {
+    transform: scale(0.6) translate(72px, 234px);
+  }
+
+  .point-1 {
+    position: absolute;
+    bottom: 181px;
+    right: 120px;
+    offset-path: path('M38.30555 154.4075C38.3056 146.8185 -26.5358 86.0685 13.9642 0.568605');
+    offset-distance: 0%;
+    animation: way 8s ease infinite;
+  }
+
+  .point-4-way svg path {
+    transform: scale(0.6) translate(511px, 137px);
+  }
+
+  .point-4 {
+    position: absolute;
+    bottom: 149px;
+    right: 543px;
+    offset-path: path('M461.1666 121.689C427.1142 36.72504 170.9574 -73.7178 0.857226 71.4822');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+  }
+}
+
+@media(max-width: 700px) {
+  .map__img {
+    width: 370px;
+  }
+
+  .point-start {
+    bottom: -10px;
+    right: -64px;
+  }
+
+  .point-2 {
+    display: none;
+  }
+
+  .point-2-way {
+    display: none;
+  }
+
+  .point-3-way {
+    bottom: 0;
+    right: 10px;
+  }
+
+  .point-3-way svg path {
+    transform: scale(0.6) translate(124px, 8px);
+  }
+
+  .point-3 {
+    bottom: 30px;
+    right: 162px;
+    offset-path: path('M148.5666 32.8896C103.3884 -10.26828 34.45722 -9.81768 1.157226 32.8896');
+    animation: way 11s ease infinite;
+  }
+
+  .point-1-way {
+    bottom: -77px;
+    right: 15px;
+  }
+
+  .point-1-way svg path {
+    transform: scale(0.4) translate(72px, 234px);
+  }
+
+  .point-1 {
+    position: absolute;
+    bottom: 121px;
+    right: 44px;
+    offset-path: path('M30.64444 123.526C30.64448 117.4548 -21.22864 68.8548 11.17136 0.454884');
+    offset-distance: 0%;
+    animation: way 8s ease infinite;
+  }
+
+  .point-5-way {
+    bottom: -13px;
+    right: 34px;
+  }
+
+  .point-5-way svg path {
+    transform: scale(0.5) translate(438px, 44px);
+  }
+
+  .point-5 {
+    position: absolute;
+    bottom: 53px;
+    right: 240px;
+    offset-path: path('M226.3055 54.408C165.8995 -13.58595 70.9645 -15.6814 0.964355 40.0686');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+  }
+
+  .point-4-way {
+    bottom: -2px;
+    right: -32px;
+  }
+
+  .point-4-way svg path {
+    transform: scale(0.35) translate(1229px, 303px);
+  }
+
+  .point-4 {
+    bottom: 68px;
+    right: 282px;
+    offset-path: path('M268.10385 70.90425 C249.6495 21.43244 99.72515 -43.00605 0.5004985 41.19395');
+    offset-distance: 0%;
+    animation: way 11s ease infinite;
+  }
 }
 
 /* Импорт TailWind */
