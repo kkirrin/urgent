@@ -20,6 +20,8 @@
 @import './block/faq.css';
 @import './block/form-section.css';
 @import './block/map.css';
+@import './block/footer.css';
+
 
 /* Импорт TailWind */
 @tailwind base;
