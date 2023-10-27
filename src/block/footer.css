@@ -17,3 +17,11 @@
 .footer__social-link:hover svg path {
     fill: #2CC304;
 }
+
+.footer__button {
+    background-color: #fff;
+    color: #060643;
+    box-shadow: none;
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+}

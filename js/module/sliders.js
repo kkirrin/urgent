@@ -4,7 +4,6 @@ export const initSlider = () => {
 
     if (exclusiveSlider) {
         const sliderItems = document.querySelectorAll('.swiper-item');
-        console.log('количество items', sliderItems);
 
         if (window.innerWidth < 1023) {
             sliderItems.forEach((slide) => {

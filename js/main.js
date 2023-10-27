@@ -10,6 +10,7 @@ import { initFlexSlider } from "./module/flex-slider.js";
 import { initAccordion } from "./module/accordion.js";
 import { initValidation } from "./module/validation.js";
 import { initMask } from "./module/mask.js";
+import { iniStickyHeader } from "./module/sticky-header.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordion();
     initValidation();
     initMask();
+    iniStickyHeader();
 
     if (window.innerWidth > 767) {
         initParalax();

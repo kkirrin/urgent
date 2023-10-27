@@ -15,8 +15,8 @@
 
 <body>
     <div class="h-screen grid grid-rows-[auto_1fr_auto]">
-        <header class="z-10 w-full md-28 transition-colors fixed">
-            <div class="container py-5 gap-5 flex items-center justify-between  md:pt-2">
+        <header class="z-10 w-full transition-colors fixed">
+            <div class="container py-5 gap-5 flex items-center justify-between  md:pt-">
                 <div class="flex items-center">
                     <img loading="lazy" src="./src/img/logo.svg" width="45" height="42" alt="лого">
                     <img class="mt-1" loading="lazy" src="./src/img/logo-2.png" width="130" height="52" alt="лого">
@@ -26,7 +26,8 @@
                     <a href="https://wa.me/79147040414">
                         <img src="./src/img/icons/whatsapp.svg" width="48" height="48" alt="whatsApp">
                     </a>
-                    <a class="header-call-button border-header button" href="tel:+0000000000">Проконсультироваться</a>
+                    <a class="header-call-button border-header button m-0"
+                        href="tel:+0000000000">Проконсультироваться</a>
 
                     <button class="btn-close-menu">
                         <svg viewBox="0 0 64 48">
@@ -63,16 +64,16 @@
 
                     <div class="flex gap-5 pl-4">
                         <a href="https://wa.me/79147040414">
-                            <img src="./src/img/whatsapp-2.svg" width="45" height="45" alt="whatsApp">
+                            <img src="./src/img/icons/whatsapp-2.svg" width="45" height="45" alt="whatsApp">
                         </a>
                         <a href="https://wa.me/79147040414">
-                            <img src="./src/img/telegram.svg" width="45" height="45" alt="telegram">
+                            <img src="./src/img/icons/telegram.svg" width="45" height="45" alt="telegram">
                         </a>
                         <a href="https://wa.me/79147040414">
-                            <img src="./src/img/vk.svg" width="45" height="45" alt="vk">
+                            <img src="./src/img/icons/vk.svg" width="45" height="45" alt="vk">
                         </a>
                         <a href="https://wa.me/79147040414">
-                            <img src="./src/img/instargam.svg" width="45" height="45" alt="instargam">
+                            <img src="./src/img/icons/instargam.svg" width="45" height="45" alt="instargam">
                         </a>
                     </div>
                 </div>
@@ -602,13 +603,14 @@
                                 <address class="text-xl mb-5">г. Владивосток, ул. Острякова</address>
                             </div>
                             <ul class="flex gap-5">
-                                <li><a href="#"><img src="./src/img/whatsapp-blue.png" width="45" height="45"
+                                <li><a href="#"><img src="./src/img/icons/whatsapp-blue.png" width="45" height="45"
                                             alt="whatsapp"></a></li>
-                                <li><a href="#"><img src="./src/img/telegram-blue.png" width="45" height="45"
+                                <li><a href="#"><img src="./src/img/icons/telegram-blue.png" width="45" height="45"
                                             alt="telegram"></a></li>
-                                <li><a href="#"><img src="./src/img/vk-blue.png" width="45" height="45" alt="vk"></a>
+                                <li><a href="#"><img src="./src/img/icons/vk-blue.png" width="45" height="45"
+                                            alt="vk"></a>
                                 </li>
-                                <li><a href="#"><img src="./src/img/instagram-blue.png" width="45" height="45"
+                                <li><a href="#"><img src="./src/img/icons/instagram-blue.png" width="45" height="45"
                                             alt="instagram"></a></li>
                             </ul>
                         </div>
@@ -620,7 +622,7 @@
                                     fill="none">
                                     <circle cx="6.92565" cy="7.00231" r="6.74303" fill="#060643" />
                                 </svg>
-                                <span>Владивосток</span>
+                                <span class="point-start-span">Владивосток</span>
                             </div>
 
                             <div class="point-1">
@@ -715,8 +717,8 @@
         </main>
 
         <footer class="py-12 bg-blue">
-            <div class="container flex justify-between flex-wrap">
-                <div class="flex items-center">
+            <div class="container flex-col sm:flex-row flex justify-between flex-wrap">
+                <div class="flex items-center mb-4">
                     <img loading="lazy" src="./src/img/logo-footer.png" width="137" height="42" alt="лого">
                 </div>
                 <ul>
@@ -745,7 +747,8 @@
                 </ul>
 
                 <div>
-                    <a class="header-call-button border-header" href="tel:+0000000000">Проконсультироваться</a>
+                    <a class="px-8 border-header-right button-right button footer__button"
+                        href="#">Проконсультироваться</a>
 
                     <div class="flex gap-5 pl-4">
                         <a class="footer__social-link" href="#">

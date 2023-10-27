@@ -24,14 +24,5 @@ export const initScroll = () => {
             });
         }
     }
-
-    window.addEventListener('scroll', () => {
-        let scrollTop = window.scrollY;
-        if (scrollTop >= 50) {
-            header.classList.add('shadow-filter-1');
-        } else {
-            header.classList.remove('shadow-filter-1');
-        }
-    });
 }
 
