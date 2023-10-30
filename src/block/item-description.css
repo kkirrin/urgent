@@ -1,0 +1,10 @@
+.item-description {
+    margin-top: 60px;
+    padding: 70px 0;
+}
+
+.item-description__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}

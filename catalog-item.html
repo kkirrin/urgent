@@ -83,323 +83,66 @@
         <main>
             <h1 class="visually-hidden">Urgent каталог продукции</h1>
 
-            <section class="catalog mt-40">
+            <section class="item-description">
                 <div class="container">
-                    <h2 class="text-5xl font-bold uppercase mb-10">каталог</h2>
-                    <ul class="catalog__list">
-                        <li class="catalog__item">
-                            <div class="catalog__item-front">
-                                <div class="catalog__item-wrapper">
-                                    <div class="catalog__item-link">
-                                        <img class="mb-3 p-2 bg-white rounded-md"
-                                            src="./src/img/catalog/wildberries.jpg" alt="">
-                                        <img class="p-3 bg-white rounded-md" src="./src/img/catalog/ozon.jpg" alt="">
-                                    </div>
-                                    <h3 class="text-xl text-white font-bold uppercase">очиститель для&nbsp;текстиля</h3>
+                    <div class="item-description__wrapper">
+                        <div class="item-description__slider w-0 min-w-[100%] relative overflow-hidden">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="./src/img/slider-item.png" alt="">
                                 </div>
-                                <div class="catalog__item-img">
-                                    <img class=" -mt-10" src="./src/img/catalog/catalog-item-1.png" alt="">
+                                <div class="swiper-slide">
+                                    <img src="./src/img/slider-item.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./src/img/slider-item.png" alt="">
                                 </div>
                             </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
 
-                            <div class="catalog__item-back">
-                                <div class="relative h-full">
-                                    <img class="w-full h-full object-cover" src="./src/img/catalog/catalog-item-2.jpg"
-                                        alt="">
-                                    <a class="block" href="#">
-                                        <img class="absolute bottom-5 right-5"
-                                            src="./src/img/catalog/catalog-item-icon.png" alt="">
-                                    </a>
-                                </div>
+                        <div class="item-description__text">
+                            <h2 class="text-3xl font-bold uppercase mb-5">Очиститель для текстиля</h2>
+                            <div class="flex gap-5 mb-8">
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="./src/img/catalog-item/wildberries.png" alt="">
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="./src/img/catalog-item/ozon.png" alt="">
+                                </a>
                             </div>
-                        </li>
-                        <li class="catalog__item">
-                            <div class="catalog__item-front">
-                                <div class="catalog__item-wrapper">
-                                    <div class="catalog__item-link">
-                                        <img class="mb-3 p-2 bg-white rounded-md"
-                                            src="./src/img/catalog/wildberries.jpg" alt="">
-                                        <img class="p-3 bg-white rounded-md" src="./src/img/catalog/ozon.jpg" alt="">
-                                    </div>
-                                    <h3 class="text-xl text-white font-bold uppercase">очиститель для&nbsp;текстиля</h3>
-                                </div>
-                                <div class="catalog__item-img">
-                                    <img class=" -mt-10" src="./src/img/catalog/catalog-item-1.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="catalog__item-back">
-                                <div class="relative h-full">
-                                    <img class="w-full h-full object-cover" src="./src/img/catalog/catalog-item-2.jpg"
-                                        alt="">
-                                    <a class="block" href="#">
-                                        <img class="absolute bottom-5 right-5"
-                                            src="./src/img/catalog/catalog-item-icon.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="catalog__item">
-                            <div class="catalog__item-front">
-                                <div class="catalog__item-wrapper">
-                                    <div class="catalog__item-link">
-                                        <img class="mb-3 p-2 bg-white rounded-md"
-                                            src="./src/img/catalog/wildberries.jpg" alt="">
-                                        <img class="p-3 bg-white rounded-md" src="./src/img/catalog/ozon.jpg" alt="">
-                                    </div>
-                                    <h3 class="text-xl text-white font-bold uppercase">очиститель для&nbsp;текстиля</h3>
-                                </div>
-                                <div class="catalog__item-img">
-                                    <img class=" -mt-10" src="./src/img/catalog/catalog-item-1.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="catalog__item-back">
-                                <div class="relative h-full">
-                                    <img class="w-full h-full object-cover" src="./src/img/catalog/catalog-item-2.jpg"
-                                        alt="">
-                                    <a class="block" href="#">
-                                        <img class="absolute bottom-5 right-5"
-                                            src="./src/img/catalog/catalog-item-icon.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="catalog__item">
-                            <div class="catalog__item-front">
-                                <div class="catalog__item-wrapper">
-                                    <div class="catalog__item-link">
-                                        <img class="mb-3 p-2 bg-white rounded-md"
-                                            src="./src/img/catalog/wildberries.jpg" alt="">
-                                        <img class="p-3 bg-white rounded-md" src="./src/img/catalog/ozon.jpg" alt="">
-                                    </div>
-                                    <h3 class="text-xl text-white font-bold uppercase">очиститель для&nbsp;текстиля</h3>
-                                </div>
-                                <div class="catalog__item-img">
-                                    <img class=" -mt-10" src="./src/img/catalog/catalog-item-1.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="catalog__item-back">
-                                <div class="relative h-full">
-                                    <img class="w-full h-full object-cover" src="./src/img/catalog/catalog-item-2.jpg"
-                                        alt="">
-                                    <a class="block" href="#">
-                                        <img class="absolute bottom-5 right-5"
-                                            src="./src/img/catalog/catalog-item-icon.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="catalog__item">
-                            <div class="catalog__item-front">
-                                <div class="catalog__item-wrapper">
-                                    <div class="catalog__item-link">
-                                        <img class="mb-3 p-2 bg-white rounded-md"
-                                            src="./src/img/catalog/wildberries.jpg" alt="">
-                                        <img class="p-3 bg-white rounded-md" src="./src/img/catalog/ozon.jpg" alt="">
-                                    </div>
-                                    <h3 class="text-xl text-white font-bold uppercase">очиститель для&nbsp;текстиля</h3>
-                                </div>
-                                <div class="catalog__item-img">
-                                    <img class=" -mt-10" src="./src/img/catalog/catalog-item-1.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="catalog__item-back">
-                                <div class="relative h-full">
-                                    <img class="w-full h-full object-cover" src="./src/img/catalog/catalog-item-2.jpg"
-                                        alt="">
-                                    <a class="block" href="#">
-                                        <img class="absolute bottom-5 right-5"
-                                            src="./src/img/catalog/catalog-item-icon.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="catalog__item">
-                            <div class="catalog__item-front">
-                                <div class="catalog__item-wrapper">
-                                    <div class="catalog__item-link">
-                                        <img class="mb-3 p-2 bg-white rounded-md"
-                                            src="./src/img/catalog/wildberries.jpg" alt="">
-                                        <img class="p-3 bg-white rounded-md" src="./src/img/catalog/ozon.jpg" alt="">
-                                    </div>
-                                    <h3 class="text-xl text-white font-bold uppercase">очиститель для&nbsp;текстиля</h3>
-                                </div>
-                                <div class="catalog__item-img">
-                                    <img class=" -mt-10" src="./src/img/catalog/catalog-item-1.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="catalog__item-back">
-                                <div class="relative h-full">
-                                    <img class="w-full h-full object-cover" src="./src/img/catalog/catalog-item-2.jpg"
-                                        alt="">
-                                    <a class="block" href="#">
-                                        <img class="absolute bottom-5 right-5"
-                                            src="./src/img/catalog/catalog-item-icon.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                </div>
-            </section>
-
-            <section class="form-section">
-                <div class="container">
-                    <h2 class="form-section__title">У вас есть какие-то вопросы?</h2>
-                    <p class="form-section__text">Наш менеджер в течение 10 минут перезвонит вам и ответит на все
-                        вопросы</p>
-                    <div class="form-wrapper">
-                        <form action="#" id="form" class="form validate-form">
-                            <div class="form__item">
-                                <input id="formName" type="text" name="name" class="form__input _req"
-                                    placeholder="Ваше имя">
-                            </div>
-
-                            <div class="form__item">
-                                <input id="formPhone" type="tel" name="phone" class="form__input _req"
-                                    placeholder="Ваш телефон">
-                            </div>
-
-                            <button type="submit" class="form__button button">Получить
-                                консультацию</button>
-                        </form>
-                    </div>
-                    <p class="form-section__descriptions">Нажимая кнопку “Получить консультацию” я даю согласие на <a
-                            class="underline" href="#" target="_blank" rel="noopener noreferrer">обработку персональных
-                            данных</a></p>
-                </div>
-            </section>
-
-            <section class="map">
-                <div class="container">
-                    <div class="map__wrapper">
-                        <div class="map__descriptions">
-                            <div class="map__contact">
-                                <a class="block text-xl font-bold hover:text-green transition mb-5"
-                                    href="tel:+78005553535">+7
-                                    800 555
-                                    35
-                                    35</a>
-                                <a class="block text-xl font-bold hover:text-green transition mb-5"
-                                    href="mailto:info@urgent-cleaner.com">info@urgent-cleaner.com</a>
-                                <address class="text-xl mb-5">г. Владивосток, ул. Острякова</address>
-                            </div>
-                            <ul class="flex gap-5">
-                                <li><a href="#"><img src="./src/img/icons/whatsapp-blue.png" width="45" height="45"
-                                            alt="whatsapp"></a></li>
-                                <li><a href="#"><img src="./src/img/icons/telegram-blue.png" width="45" height="45"
-                                            alt="telegram"></a></li>
-                                <li><a href="#"><img src="./src/img/icons/vk-blue.png" width="45" height="45"
-                                            alt="vk"></a>
+                            <ul class="list-disc pl-8 max-w-[478px]">
+                                <li class="mb-2">Салон автомобиля, домашняя мебель, ваши любимые вещи из гардероба. Все
+                                    это ежедневно сталкивается с загрязнениями.
                                 </li>
-                                <li><a href="#"><img src="./src/img/icons/instagram-blue.png" width="45" height="45"
-                                            alt="instagram"></a></li>
+                                <li class="mb-2">Пыль и грязь, пятна отеды и домашних животных.</li>
+                                <li class="mb-2">Теперь не обязательно заказывать дорогостоящую химчистку или даже
+                                    перетяжку. Ваши проблемы с загрязнениями решит очиститель для текстиля</li>
                             </ul>
-                        </div>
 
-                        <div class="map__img">
-                            <img src="./src/img/map.png" alt="карта">
-                            <div class="point-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                    fill="none">
-                                    <circle cx="6.92565" cy="7.00231" r="6.74303" fill="#060643" />
-                                </svg>
-                                <span class="point-start-span">Владивосток</span>
-                            </div>
+                            <p><span class="font-bold">Срок годности:</span> 3 года</p>
+                            <p><span class="font-bold">Объем:</span> 100мл</p>
+                            <p><span class="font-bold">Производство:</span> Россия, By Choose Nano LTD. (Тайвань)</p>
+                            <p><span class="font-bold">Состав:</span> ПАВ, вода, растительный экстракт</p>
+                            <p class="mb-7"><span class="font-bold">Меры предосторожности:</span> При попадании в глаза
+                                промыть водой
+                            </p>
 
-                            <div class="point-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <circle cx="12.1671" cy="11.8756" r="10.7384" stroke="#060643" />
-                                    <circle cx="12.167" cy="11.8755" r="5.61919" fill="#060643" />
-                                </svg>
-                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-3xl font-bold leading-none">350 ₽</p>
+                                    <p class="leading-none">розничная цена</p>
+                                </div>
 
-                            <div class="point-1-way">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="78" height="310" viewBox="0 0 78 310"
-                                    fill="none">
-                                    <path d="M76.6111 308.815C76.6112 293.637 -53.0716 172.137 27.9284 1.13721"
-                                        stroke="#060643" stroke-width="2" stroke-linecap="round"
-                                        stroke-dasharray="12 12" />
-                                </svg>
-                            </div>
-
-                            <div class="point-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <circle cx="12.1671" cy="11.8756" r="10.7384" stroke="#060643" />
-                                    <circle cx="12.167" cy="11.8755" r="5.61919" fill="#060643" />
-                                </svg>
-                            </div>
-                            <div class="point-2-way">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="808" height="287" viewBox="0 0 808 287"
-                                    fill="none">
-                                    <path d="M806.611 285.815C708.837 79.5876 328.966 -100.625 1.92871 69.6372"
-                                        stroke="#060643" stroke-width="2" stroke-linecap="round"
-                                        stroke-dasharray="12 12" />
-                                </svg>
-                            </div>
-
-                            <div class="point-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <circle cx="12.1671" cy="11.8756" r="10.7384" stroke="#060643" />
-                                    <circle cx="12.167" cy="11.8755" r="5.61919" fill="#060643" />
-                                </svg>
-                            </div>
-
-                            <div class="point-3-way">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="249" height="56" viewBox="0 0 249 56"
-                                    fill="none">
-                                    <path d="M247.611 54.816C172.314 -17.1138 57.4287 -16.3628 1.92871 54.8161"
-                                        stroke="#060643" stroke-width="2" stroke-linecap="round"
-                                        stroke-dasharray="12 12" />
-                                </svg>
-                            </div>
-
-                            <div class="point-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <circle cx="12.1671" cy="11.8756" r="10.7384" stroke="#060643" />
-                                    <circle cx="12.167" cy="11.8755" r="5.61919" fill="#060643" />
-                                </svg>
-                            </div>
-
-                            <div class="point-4-way">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="770" height="204" viewBox="0 0 770 204"
-                                    fill="none">
-                                    <path d="M768.611 202.815C711.857 61.2084 284.929 -122.863 1.42871 119.137"
-                                        stroke="#060643" stroke-width="2" stroke-linecap="round"
-                                        stroke-dasharray="12 12" />
-                                </svg>
-                            </div>
-
-                            <div class="point-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <circle cx="12.1671" cy="11.8756" r="10.7384" stroke="#060643" />
-                                    <circle cx="12.167" cy="11.8755" r="5.61919" fill="#060643" />
-                                </svg>
-                            </div>
-
-                            <div class="point-5-way">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="454" height="110" viewBox="0 0 454 110"
-                                    fill="none">
-                                    <path d="M452.611 108.816C331.799 -27.1719 141.929 -31.3628 1.92871 80.1372"
-                                        stroke="#060643" stroke-width="2" stroke-linecap="round"
-                                        stroke-dasharray="12 12" />
-                                </svg>
+                                <a class="px-8 py-2 text-center border-header-right button-right button button--blue block w-60 m-0"
+                                    href="#">Купить</a>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
             </section>
 

@@ -11,6 +11,7 @@ import { initAccordion } from "./module/accordion.js";
 import { initValidation } from "./module/validation.js";
 import { initMask } from "./module/mask.js";
 import { iniStickyHeader } from "./module/sticky-header.js";
+import { initItemSlider } from "./module/item-slider.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initValidation();
     initMask();
     iniStickyHeader();
+    initItemSlider();
 
     if (window.innerWidth > 767) {
         initParalax();

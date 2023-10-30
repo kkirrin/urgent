@@ -22,6 +22,7 @@
 @import './block/map.css';
 @import './block/footer.css';
 @import './block/catalog.css';
+@import './block/item-description.css';
 
 
 /* Импорт TailWind */
