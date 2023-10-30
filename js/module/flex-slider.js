@@ -38,34 +38,35 @@ const artists = [
 export const initFlexSlider = () => {
 
     const artistsList = document.getElementById('artistsList');
-
-    artists.forEach((artist, index) => {
-        const li = document.createElement('li');
-        li.style.backgroundImage = `url(${artist.backgroundUrl})`;
-        li.className = index === 0 ? 'active' : '';
-        li.innerHTML = `
-          <h3 class="">${artist.name}</h3>
-          <div class="section-content">
-            <div class="inner">
-              <div class="bio">
-                <h2>${artist.name}</h2>
-                <p>${artist.description}</p>
+    if (artistsList) {
+        artists.forEach((artist, index) => {
+            const li = document.createElement('li');
+            li.style.backgroundImage = `url(${artist.backgroundUrl})`;
+            li.className = index === 0 ? 'active' : '';
+            li.innerHTML = `
+              <h3 class="">${artist.name}</h3>
+              <div class="section-content">
+                <div class="inner">
+                  <div class="bio">
+                    <h2>${artist.name}</h2>
+                    <p>${artist.description}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        `;
-        li.addEventListener('click', () => setActive(index));
-        artistsList.appendChild(li);
-    });
+            `;
+            li.addEventListener('click', () => setActive(index));
+            artistsList.appendChild(li);
+        });
 
-    function setActive(index) {
-        const currentActive = artistsList.querySelector('.active');
-        if (currentActive) {
-            currentActive.classList.remove('active');
-        }
-        const newActive = artistsList.children[index];
-        if (newActive) {
-            newActive.classList.add('active');
+        function setActive(index) {
+            const currentActive = artistsList.querySelector('.active');
+            if (currentActive) {
+                currentActive.classList.remove('active');
+            }
+            const newActive = artistsList.children[index];
+            if (newActive) {
+                newActive.classList.add('active');
+            }
         }
     }
 }

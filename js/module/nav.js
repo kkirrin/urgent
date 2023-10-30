@@ -13,7 +13,7 @@ export const initNav = () => {
 
     mobileMenuLinks.forEach(link => {
         link.addEventListener('click', (evt) => {
-            evt.preventDefault();
+            // evt.preventDefault();
             menuButton.classList.remove('active');
             mobileMenu.classList.remove('is-active');
             // body.classList.remove('lock');

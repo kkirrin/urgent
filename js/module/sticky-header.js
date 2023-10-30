@@ -3,7 +3,6 @@ export const iniStickyHeader = () => {
 
     window.addEventListener('scroll', () => {
         let scrollTop = window.scrollY;
-        console.log(scrollTop);
         if (scrollTop >= 50) {
             header.classList.add('header-fix');
         } else {

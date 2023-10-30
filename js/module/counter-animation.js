@@ -1,4 +1,6 @@
 export const initCounterAnimation = () => {
+    const counterList = document.querySelector('.counter-list');
+
     const counterAnimation = (el, initialNum, finalNum) => {
         if (Number.isInteger(finalNum)) {
             let interval = setInterval(function () {
@@ -21,8 +23,9 @@ export const initCounterAnimation = () => {
         }
     }
 
-    counterAnimation(document.querySelector('.counter-years'), 0, 10);
-    counterAnimation(document.querySelector('.counter-partners'), 0, 100);
-    counterAnimation(document.querySelector('.counter-place'), 0, 3);
-
+    if (counterList) {
+        counterAnimation(document.querySelector('.counter-years'), 0, 10);
+        counterAnimation(document.querySelector('.counter-partners'), 0, 100);
+        counterAnimation(document.querySelector('.counter-place'), 0, 3);
+    }
 }

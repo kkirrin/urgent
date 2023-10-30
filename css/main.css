@@ -1132,19 +1132,6 @@ button.swiper-pagination-bullet{
   animation: spin 5s ease 1 forwards;
 }
 
-/* @keyframes rotate {
-    0% {
-        width: 50px;
-        height: 50px;
-    }
-
-    100% {
-        width: 500px;
-        height: 500px;
-        transform: rotate(360deg);
-    }
-} */
-
 @keyframes spin {
   0% {
     offset-distance: 0;
@@ -2591,6 +2578,59 @@ body {
   margin: 0 0 20px 0;
 }
 
+.catalog {
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.catalog__item {
+  position: relative;
+  perspective: 1000px;
+  will-change: transform;
+}
+
+.catalog__item:hover .catalog__item-front {
+  transform: rotateY(180deg);
+}
+
+.catalog__item:hover .catalog__item-back {
+  transform: rotateY(360deg);
+}
+
+.catalog__item-front {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 47px 20px 20px 58px;
+  transition: 1s;
+  backface-visibility: hidden;
+  background-color: #090952;
+}
+
+.catalog__item-back {
+  color: #ffffff;
+  transition: 1s;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: rotateY(180deg);
+  background-color: #090952;
+}
+
+.catalog__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -3178,12 +3218,24 @@ body {
   position: fixed;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
 
+.bottom-5{
+  bottom: 1.25rem;
+}
+
 .right-32{
   right: 8rem;
+}
+
+.right-5{
+  right: 1.25rem;
 }
 
 .top-0{
@@ -3198,6 +3250,10 @@ body {
   margin: 0px;
 }
 
+.-mt-10{
+  margin-top: -2.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -3208,6 +3264,10 @@ body {
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .mb-4{
@@ -3226,6 +3286,10 @@ body {
   margin-top: 0.25rem;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
 .block{
   display: block;
 }
@@ -3240,6 +3304,10 @@ body {
 
 .hidden{
   display: none;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .h-screen{
@@ -3306,6 +3374,10 @@ body {
   overflow: hidden;
 }
 
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
 .bg-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 82 / var(--tw-bg-opacity));
@@ -3314,6 +3386,19 @@ body {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-8{
@@ -3370,6 +3455,11 @@ body {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
