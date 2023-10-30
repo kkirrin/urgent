@@ -2583,7 +2583,8 @@ body {
 
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 5px;
 }
 
@@ -2629,6 +2630,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media (max-width: 737px) {
+  .catalog__item-front {
+    padding: 20px 20px 20px 20px;
+  }
 }
 
 /* Импорт TailWind */
@@ -3447,6 +3454,11 @@ body {
   line-height: 2.25rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -3455,11 +3467,6 @@ body {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold{

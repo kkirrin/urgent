@@ -2,7 +2,8 @@
 
 .catalog__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 5px;
 }
 
@@ -48,4 +49,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (max-width: 737px) {
+    .catalog__item-front {
+        padding: 20px 20px 20px 20px;
+    }
 }
