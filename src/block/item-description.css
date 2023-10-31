@@ -8,3 +8,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+
+.item-description .swiper-pagination {
+    height: 50px;
+    width: 100px;
+}

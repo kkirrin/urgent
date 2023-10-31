@@ -2649,6 +2649,11 @@ body {
   gap: 30px;
 }
 
+.item-description .swiper-pagination {
+  height: 50px;
+  width: 100px;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -3296,6 +3301,14 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .mb-9{
   margin-bottom: 2.25rem;
 }
@@ -3306,14 +3319,6 @@ body {
 
 .mt-40{
   margin-top: 10rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
-}
-
-.mb-7{
-  margin-bottom: 1.75rem;
 }
 
 .block{
@@ -3340,8 +3345,16 @@ body {
   height: 100vh;
 }
 
+.w-0{
+  width: 0px;
+}
+
 .w-12{
   width: 3rem;
+}
+
+.w-60{
+  width: 15rem;
 }
 
 .w-8{
@@ -3352,28 +3365,16 @@ body {
   width: 100%;
 }
 
-.w-0{
-  width: 0px;
-}
-
-.w-60{
-  width: 15rem;
-}
-
 .min-w-\[100\%\]{
   min-width: 100%;
 }
 
-.max-w-xl{
-  max-width: 36rem;
-}
-
-.max-w-md{
-  max-width: 28rem;
-}
-
 .max-w-\[478px\]{
   max-width: 478px;
+}
+
+.max-w-xl{
+  max-width: 36rem;
 }
 
 .transform{
@@ -3461,6 +3462,11 @@ body {
   padding-bottom: 3rem;
 }
 
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -3471,11 +3477,6 @@ body {
   padding-bottom: 1.25rem;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .pb-11{
   padding-bottom: 2.75rem;
 }
@@ -3484,12 +3485,12 @@ body {
   padding-left: 1rem;
 }
 
-.pt-4{
-  padding-top: 1rem;
-}
-
 .pl-8{
   padding-left: 2rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-center{
@@ -3541,12 +3542,12 @@ body {
   text-transform: uppercase;
 }
 
-.leading-tight{
-  line-height: 1.25;
-}
-
 .leading-none{
   line-height: 1;
+}
+
+.leading-tight{
+  line-height: 1.25;
 }
 
 .text-blue{
