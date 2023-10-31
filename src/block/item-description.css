@@ -12,4 +12,16 @@
 .item-description .swiper-pagination {
     height: 50px;
     width: 100px;
+    bottom: 20px;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+    .item-description__wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
 }
