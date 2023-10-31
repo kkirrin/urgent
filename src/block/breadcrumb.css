@@ -1,0 +1,11 @@
+.breadcrumb {
+    padding: 20px 0;
+}
+
+.breadcrumb--margintop {
+    margin-top: 80px;
+}
+
+.breadcrumb__list {
+    display: flex;
+}
