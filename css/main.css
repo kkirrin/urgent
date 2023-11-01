@@ -248,7 +248,8 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  margin-inline-start:var(--swiper-centered-offset-before)
+  -webkit-margin-start:var(--swiper-centered-offset-before);
+          margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -258,7 +259,8 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  margin-block-start:var(--swiper-centered-offset-before)
+  -webkit-margin-before:var(--swiper-centered-offset-before);
+          margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -2662,6 +2664,124 @@ body {
   }
 }
 
+.main-section {
+  padding: 180px 0 70px;
+}
+
+.sertificate {
+  min-width: 0;
+  padding: 180px 0 70px;
+  overflow: hidden;
+}
+
+.sertificate__title {
+  position: relative;
+  z-index: 1;
+}
+
+.sertificate__wrapper {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.gallery-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.sertificate-slide a {
+  display: block;
+}
+
+.sertificate__title {
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: 30px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main-section_img {
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.main-section__text {
+  text-shadow: .5px .5px 1px black;
+}
+
+.main-section__sub {
+  color: #090952;
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.main-section__sub--sub {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.main-section__left {
+  width: 50%;
+}
+
+.sertificate-slide {
+  margin: 10px;
+  /* max-height: 300px; */
+}
+
+.sertificate-slide img {
+  /* max-height: 300px; */
+}
+
+.main-section_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+@media(max-width: 767px) {
+  .main-section__sub {
+    font-size: 31px;
+    /* color: white; */
+  }
+
+  .sertificate__title {
+    font-size: 24px;
+    /* color: white; */
+  }
+
+  .main-section__left {
+    width: 100%;
+  }
+
+  .main-section_img {
+    display: none;
+  }
+
+  .main-section__sub--sub {
+    font-size: 32px;
+  }
+
+  .main-section__left {
+    font-size: 14px;
+  }
+
+  .sertificate {
+    padding: 60px 0;
+  }
+}
+
 .advantages {
   padding: 70px 0;
 }
@@ -2814,126 +2934,9 @@ body {
   }
 }
 
-.main-section {
-  padding: 180px 0 70px;
-}
-
-.sertificate {
-  min-width: 0;
-  padding: 180px 0 70px;
-  overflow: hidden;
-}
-
-@media(max-width: 767px) {
-  .sertificate {
-    padding: 60px 0;
-  }
-}
-
-.sertificate__wrapper {
-  width: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 1;
-}
-
-.gallery-wrapper {
-  /* overflow: hidden; */
-  display: flex;
-  gap: 30px;
-}
-
-.sertificate-slide a {
-  display: block;
-}
-
-.sertificate__title {
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 700;
-  padding-bottom: 30px;
-  line-height: normal;
-  text-transform: uppercase;
-  color: white;
-}
-
-.main-section_img {
-  z-index: -1;
-  /* padding-left: 700px; */
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.main-section__text {
-  text-shadow: .5px .5px 1px black;
-}
-
-.main-section__sub {
-  color: #090952;
-  padding-bottom: 20px;
-  font-size: 50px;
-  font-weight: 700;
-}
-
-.main-section__sub--sub {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-
-.main-section__left {
-  width: 50%;
-}
-
-.sertificate-slide {
-  margin: 10px;
-  max-height: 300px;
-}
-
-.sertificate-slide img{
-  max-height: 300px;
-}
-
-.main-section_bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
-}
-
-@media(max-width: 767px) {
-  .main-section__sub {
-    font-size: 31px;
-    /* color: white; */
-  }
-
-  .sertificate__title {
-    font-size: 24px;
-    /* color: white; */
-  }
-
-  .main-section__left {
-    width: 100%;
-  }
-
-  .main-section_img {
-    display: none;
-  }
-
-  .main-section__sub--sub {
-    font-size: 32px;
-  }
-
-  .main-section__left {
-    font-size: 14px;
-  }
-}
-
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
