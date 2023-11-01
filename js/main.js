@@ -1,5 +1,6 @@
 import { initNav } from "./module/nav.js";
 import { initSlider } from "./module/sliders.js";
+import { initSertificateSlider } from "./module/sertificate_sliders.js";
 import { initCurrentYear } from "./module/current-year.js";
 import { initScrollToTop } from "./module/scroll-to-top.js";
 import { initScroll } from "./module/scroll.js";
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initNav();
     initSlider();
+    initSertificateSlider();
     initCurrentYear();
     initScrollToTop();
     initScroll();
