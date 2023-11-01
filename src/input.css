@@ -24,9 +24,10 @@
 @import './block/catalog.css';
 @import './block/item-description.css';
 @import './block/sertificate.css';
-
-
-
+@import './block/advantages.css';
+@import './block/breadcrumb.css';
+@import './block/info.css';
+@import './block/marketing.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -41,7 +42,6 @@
     font-style: normal;
     font-display: swap;
 } */
-
 
 @layer base {
     html {
