@@ -12,7 +12,7 @@
   margin: 0;
   /* outline: none; */
   position: relative;
-  z-index: 21;
+  z-index: 201;
   border: none;
   background: none;
   cursor: pointer;
@@ -91,14 +91,14 @@
   width: 375px;
   height: 100%;
   overflow: auto;
-  padding: 80px 56px 100px;
+  padding: 80px 40px 100px;
   background: #FFF;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
   transform: translateX(100%);
 }
 
 .mobile-menu.is-active {
-  z-index: 20;
+  z-index: 200;
   transform: translateX(0);
 }
 
@@ -107,6 +107,10 @@
     width: 100%;
     padding: 80px 20px 100px;
   }
+}
+
+.mobile-menu li a {
+  font-weight: 500;
 }
 
 /**
@@ -1215,11 +1219,17 @@ button.swiper-pagination-bullet{
 
 .about__btn-1 {
   transform: rotate(42.449deg);
+  /* offset-path: circle(5px at center);
+    animation: spin 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+  position: absolute;
+  inset: 0;
+}
+
+.about__btn-1.active {
   offset-path: circle(5px at center);
   animation: spin 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
   animation-composition: accumulate, replace;
-  position: absolute;
-  inset: 0;
 }
 
 .about__btn-1 svg {
@@ -1228,10 +1238,17 @@ button.swiper-pagination-bullet{
 
 .about__btn-2 {
   transform: rotate(46deg);
+  /* offset-path: circle(5px at center);
+    animation: spin2 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+  position: absolute;
+  inset: 0;
+}
+
+.about__btn-2.active {
   offset-path: circle(5px at center);
   animation: spin2 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
   animation-composition: accumulate, replace;
-  position: absolute;
   inset: 0;
 }
 
@@ -1242,6 +1259,14 @@ button.swiper-pagination-bullet{
 .about__btn-3 {
   position: absolute;
   transform: rotate(40deg);
+  /* offset-path: circle(5px at center);
+    offset-path: circle(5px at center);
+    animation: spin3 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+  inset: 0;
+}
+
+.about__btn-3.active {
   offset-path: circle(5px at center);
   animation: spin3 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
   animation-composition: accumulate, replace;
@@ -1254,10 +1279,17 @@ button.swiper-pagination-bullet{
 
 .about__btn-4 {
   transform: rotate(40deg);
+  /* offset-path: circle(5px at center);
+    animation: spin4 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+  position: absolute;
+  inset: 0;
+}
+
+.about__btn-4.active {
   offset-path: circle(5px at center);
   animation: spin4 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
   animation-composition: accumulate, replace;
-  position: absolute;
   inset: 0;
 }
 
@@ -1269,10 +1301,17 @@ button.swiper-pagination-bullet{
   bottom: 20%;
   left: -23px;
   transform: rotate(40deg);
+  /* offset-path: circle(5px at center);
+    animation: spin5 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+  position: absolute;
+  inset: 0;
+}
+
+.about__btn-5.active {
   offset-path: circle(5px at center);
   animation: spin5 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
   animation-composition: accumulate, replace;
-  position: absolute;
   inset: 0;
 }
 
@@ -1282,10 +1321,17 @@ button.swiper-pagination-bullet{
 
 .about__btn-6 {
   transform: rotate(40deg);
+  /* offset-path: circle(5px at center);
+    animation: spin6 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+  position: absolute;
+  inset: 0;
+}
+
+.about__btn-6.active {
   offset-path: circle(5px at center);
   animation: spin6 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
   animation-composition: accumulate, replace;
-  position: absolute;
   inset: 0;
 }
 

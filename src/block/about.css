@@ -141,11 +141,17 @@
 
 .about__btn-1 {
     transform: rotate(42.449deg);
+    /* offset-path: circle(5px at center);
+    animation: spin 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+    position: absolute;
+    inset: 0;
+}
+
+.about__btn-1.active {
     offset-path: circle(5px at center);
     animation: spin 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
     animation-composition: accumulate, replace;
-    position: absolute;
-    inset: 0;
 }
 
 .about__btn-1 svg {
@@ -154,10 +160,17 @@
 
 .about__btn-2 {
     transform: rotate(46deg);
+    /* offset-path: circle(5px at center);
+    animation: spin2 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+    position: absolute;
+    inset: 0;
+}
+
+.about__btn-2.active {
     offset-path: circle(5px at center);
     animation: spin2 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
     animation-composition: accumulate, replace;
-    position: absolute;
     inset: 0;
 }
 
@@ -168,7 +181,14 @@
 .about__btn-3 {
     position: absolute;
     transform: rotate(40deg);
+    /* offset-path: circle(5px at center);
     offset-path: circle(5px at center);
+    animation: spin3 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+    inset: 0;
+}
+
+.about__btn-3.active {
     offset-path: circle(5px at center);
     animation: spin3 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
     animation-composition: accumulate, replace;
@@ -181,11 +201,17 @@
 
 .about__btn-4 {
     transform: rotate(40deg);
-    offset-path: circle(5px at center);
+    /* offset-path: circle(5px at center);
+    animation: spin4 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+    position: absolute;
+    inset: 0;
+}
+
+.about__btn-4.active {
     offset-path: circle(5px at center);
     animation: spin4 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
     animation-composition: accumulate, replace;
-    position: absolute;
     inset: 0;
 }
 
@@ -197,11 +223,18 @@
     bottom: 20%;
     left: -23px;
     transform: rotate(40deg);
+    /* offset-path: circle(5px at center);
+    animation: spin5 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+    position: absolute;
+    inset: 0;
+}
+
+.about__btn-5.active {
     offset-path: circle(5px at center);
     offset-path: circle(5px at center);
     animation: spin5 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
     animation-composition: accumulate, replace;
-    position: absolute;
     inset: 0;
 }
 
@@ -212,11 +245,17 @@
 
 .about__btn-6 {
     transform: rotate(40deg);
-    offset-path: circle(5px at center);
+    /* offset-path: circle(5px at center);
+    animation: spin6 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
+    animation-composition: accumulate, replace; */
+    position: absolute;
+    inset: 0;
+}
+
+.about__btn-6.active {
     offset-path: circle(5px at center);
     animation: spin6 4s 1 linear forwards, expandCircle 2s 1 alternate ease-out forwards;
     animation-composition: accumulate, replace;
-    position: absolute;
     inset: 0;
 }
 
