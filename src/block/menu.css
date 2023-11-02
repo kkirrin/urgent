@@ -6,7 +6,7 @@
     width: 375px;
     height: 100%;
     overflow: auto;
-    padding: 80px 56px 100px;
+    padding: 80px 40px 100px;
     background: #FFF;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 
@@ -14,7 +14,7 @@
 }
 
 .mobile-menu.is-active {
-    z-index: 20;
+    z-index: 200;
     transform: translateX(0);
 }
 
@@ -23,4 +23,8 @@
         width: 100%;
         padding: 80px 20px 100px;
     }
+}
+
+.mobile-menu li a {
+    font-weight: 500;
 }
