@@ -28,6 +28,7 @@
 @import './block/breadcrumb.css';
 @import './block/info.css';
 @import './block/marketing.css';
+@import './block/popup.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -67,10 +68,6 @@
 
 .header-call-button {
     @apply py-3 px-8 font-semibold text-green text-center border-solid border-green border-[2px] transition-all block hidden sm:block;
-}
-
-.popup-link {
-    @apply block py-3 text-2xl font-bodyFont uppercase px-8 bg-green rounded-lg text-center border-solid border-green border-[2px] transition-all relative z-[1] hover:bg-transparent;
 }
 
 .nav-link {

@@ -3,11 +3,12 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 377px;
+    width: 375px;
     height: 100%;
     overflow: auto;
     padding: 80px 56px 100px;
-    background-color: cadetblue;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 
     transform: translateX(100%);
 }
