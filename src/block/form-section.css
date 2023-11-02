@@ -87,4 +87,13 @@
     .form-section__descriptions a {
         font-size: 10px;
     }
+
+    .form__input {
+        width: 100%;
+    }
+
+    .form__button {
+        width: 100%;
+    }
+
 }
