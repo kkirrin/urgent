@@ -1,34 +1,26 @@
 export const initObserver = () => {
-    const aboutSection = document.querySelector('.about');
-    const btn1 = document.querySelector('.about__btn-1');
-    const btn2 = document.querySelector('.about__btn-2');
-    const btn3 = document.querySelector('.about__btn-3');
-    const btn4 = document.querySelector('.about__btn-4');
-    const btn5 = document.querySelector('.about__btn-5');
-    const btn6 = document.querySelector('.about__btn-6');
+    const aboutWheel = document.querySelector('.about__wheel');
+    const buttons = aboutWheel.querySelectorAll('.about__btn'); // Предполагаем, что все кнопки имеют класс `about__btn`
 
     const options = {
         root: null, // используем вьюпорт в качестве корневого элемента
         rootMargin: '0px', // без отступов
-        threshold: 0.1 // коллбек будет вызван, когда 50% элемента видно
+        threshold: 0.2 // коллбек будет вызван, когда элемент полностью виден
     };
 
-    const observer = new IntersectionObserver(handleIntersection, options);
-    observer.observe(aboutSection);
-    observer.observe(btn1);
-    observer.observe(btn2);
-    observer.observe(btn3);
-    observer.observe(btn4);
-    observer.observe(btn5);
-    observer.observe(btn6);
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Добавляем класс 'active' всем кнопкам
+                buttons.forEach(btn => btn.classList.add('active'));
+                // Прекращаем наблюдение за элементом, так как класс уже добавлен
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    // Наблюдаем за элементом .about__wheel
+    observer.observe(aboutWheel);
 };
 
-const handleIntersection = (entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-        } else {
-            entry.target.classList.remove('active');
-        }
-    });
-};
+// Теперь нет необходимости в отдельной функции handleIntersection, так как коллбек интегрирован прямо в IntersectionObserver
