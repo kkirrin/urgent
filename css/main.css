@@ -109,8 +109,13 @@
   }
 }
 
-.mobile-menu li a {
+.mobile-menu a {
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: #2CC304;
 }
 
 /**
@@ -809,9 +814,9 @@ button.swiper-pagination-bullet{
   width: 40px;
   height: 40px;
   padding: 5px;
-  color: #D1D618;
-  border: 2px solid #ffffff;
-  background-color:#D1D618;
+  color: #2CC304;
+  border: 2px solid #2CC304;
+  background-color: #2CC304;
   border-radius: 100%;
   cursor: pointer;
   position: fixed;
@@ -1030,9 +1035,13 @@ button.swiper-pagination-bullet{
 
 .hero {
   padding: 180px 0 70px;
-  background-image: url('../src/img/bg/bg.png');
-  background-repeat: no-repeat;
-  background-position: top right;
+}
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .hero__text {
@@ -1093,6 +1102,7 @@ button.swiper-pagination-bullet{
   position: absolute;
   border-radius: 60px 60px 0px 60px;
   transition: all 0.3s ease-in;
+  opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1104,6 +1114,10 @@ button.swiper-pagination-bullet{
 
 .about__btn.is-active {
   background-color: #2CC304;
+}
+
+.about__btn.active {
+  opacity: 1;
 }
 
 .about__btn.is-active svg {
@@ -1452,10 +1466,69 @@ button.swiper-pagination-bullet{
 }
 
 .item-paralax-1 {
+  position: relative;
+}
+
+.item-paralax-1--decor:before {
+  content: '';
+  position: absolute;
+  top: 180px;
+  left: -170px;
+  width: 250px;
+  height: 32px;
+  background-image: url('../src/img/feachers/feachers-wave-1.svg');
+}
+
+.item-paralax-1--decor::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: -170px;
+  width: 250px;
+  height: 32px;
+  background-image: url('../src/img/feachers/feachers-wave-1.svg');
 }
 
 .item-paralax-2 {
   margin-left: -50px;
+}
+
+.item-paralax-2--decor:before {
+  content: '';
+  position: absolute;
+  top: 180px;
+  right: -192px;
+  width: 250px;
+  height: 32px;
+  background-image: url('../src/img/feachers/feachers-wave-2.svg');
+}
+
+.item-paralax-2--decor::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  right: -192px;
+  width: 250px;
+  height: 32px;
+  background-image: url('../src/img/feachers/feachers-wave-2.svg');
+}
+
+@media (max-width: 1023px) {
+  .item-paralax-1--decor:before {
+    display: none;
+  }
+
+  .item-paralax-1--decor::after {
+    display: none;
+  }
+
+  .item-paralax-2--decor:before {
+    display: none;
+  }
+
+  .item-paralax-2--decor::after {
+    display: none;
+  }
 }
 
 @media(max-width: 767px) {
@@ -2777,8 +2850,8 @@ body {
   background-position: right;
 }
 
-.main-section__text {
-  text-shadow: .5px .5px 1px black;
+.main-section p {
+  text-shadow: 1px 1px 2px white;
 }
 
 .main-section__sub {
@@ -3524,6 +3597,7 @@ video {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -3799,6 +3873,10 @@ body {
 
 .min-h-\[90vh\]{
   min-height: 90vh;
+}
+
+.min-h-\[70vh\]{
+  min-height: 70vh;
 }
 
 .w-0{
@@ -4087,6 +4165,10 @@ body {
 
 .opacity-60{
   opacity: 0.6;
+}
+
+.mix-blend-difference{
+  mix-blend-mode: difference;
 }
 
 .transition{
