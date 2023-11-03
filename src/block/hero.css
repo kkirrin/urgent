@@ -21,3 +21,17 @@
     transform: rotate(-5deg);
     line-height: 1;
 }
+
+.hero__logo-big {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 20%;
+    transform: translateY(50%);
+}
+
+@media (max-width: 1023px) {
+    .hero__logo-big {
+        display: none;
+    }
+}

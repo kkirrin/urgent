@@ -780,7 +780,7 @@ button.swiper-pagination-bullet{
   left: 0;
   width: 46px;
   height: 46px;
-  background: url('../src/img/arrow.svg');
+  background: url('src/img/arrow.svg');
   background-repeat: no-repeat;
 }
 
@@ -791,7 +791,7 @@ button.swiper-pagination-bullet{
   left: 0;
   width: 46px;
   height: 46px;
-  background: url('../src/img/arrow.svg');
+  background: url('src/img/arrow.svg');
   background-repeat: no-repeat;
   transform: rotate(180deg);
 }
@@ -1055,6 +1055,20 @@ button.swiper-pagination-bullet{
   font-weight: 700;
   transform: rotate(-5deg);
   line-height: 1;
+}
+
+.hero__logo-big {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  transform: translateY(50%);
+}
+
+@media (max-width: 1023px) {
+  .hero__logo-big {
+    display: none;
+  }
 }
 
 .animation-left {
@@ -1819,7 +1833,7 @@ button.swiper-pagination-bullet{
   left: 0;
   width: 150px;
   height: 100%;
-  background-image: url('../src/img/commercial/rectangle-1.png');
+  background-image: url('src/img/commercial/rectangle-1.png');
   background-repeat: no-repeat;
 }
 
@@ -1829,7 +1843,7 @@ button.swiper-pagination-bullet{
   right: 0;
   width: 584px;
   height: 1120px;
-  background-image: url('../src/img/commercial/rectangle-2.png');
+  background-image: url('src/img/commercial/rectangle-2.png');
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -1868,7 +1882,7 @@ button.swiper-pagination-bullet{
     right: 0;
     width: 300px;
     height: 340px;
-    background-image: url('../src/img/commercial/rectangle-3.png');
+    background-image: url('src/img/commercial/rectangle-3.png');
     background-repeat: no-repeat;
     z-index: -1;
     -o-object-fit: cover;
@@ -2378,6 +2392,7 @@ body {
 
 .map {
   padding: 70px 0;
+  overflow: hidden;
 }
 
 .map__wrapper {
@@ -3052,7 +3067,7 @@ body {
 .marketing__item {
   width: 240px;
   height: 240px;
-  background-image: url('../src/img/marketing/ellipse.png');
+  background-image: url('src/img/marketing/ellipse.png');
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
@@ -3597,7 +3612,7 @@ video {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -3767,16 +3782,8 @@ body {
   bottom: 1.25rem;
 }
 
-.right-32{
-  right: 8rem;
-}
-
 .right-5{
   right: 1.25rem;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .z-10{
@@ -3851,10 +3858,6 @@ body {
   display: grid;
 }
 
-.hidden{
-  display: none;
-}
-
 .h-12{
   height: 3rem;
 }
@@ -3871,12 +3874,12 @@ body {
   height: 100vh;
 }
 
-.min-h-\[90vh\]{
-  min-height: 90vh;
-}
-
 .min-h-\[70vh\]{
   min-height: 70vh;
+}
+
+.min-h-\[90vh\]{
+  min-height: 90vh;
 }
 
 .w-0{
@@ -4167,10 +4170,6 @@ body {
   opacity: 0.6;
 }
 
-.mix-blend-difference{
-  mix-blend-mode: difference;
-}
-
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -4384,14 +4383,6 @@ body {
 }
 
 @media (min-width: 1024px){
-  .md\:absolute{
-    position: absolute;
-  }
-
-  .md\:flex{
-    display: flex;
-  }
-
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
