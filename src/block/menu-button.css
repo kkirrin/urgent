@@ -6,7 +6,7 @@
     margin: 0;
     /* outline: none; */
     position: relative;
-    z-index: 21;
+    z-index: 201;
     border: none;
     background: none;
     cursor: pointer;
@@ -65,4 +65,15 @@
 
 .btn-close-menu.active svg path:nth-child(3) {
     --offset: 58px;
+}
+
+.btn-close-menu.active {
+    /* transform: translateX(50px); */
+}
+
+@media (min-width: 1440px) {
+    .btn-close-menu.active {
+        transform: translateX(150px);
+    }
+
 }

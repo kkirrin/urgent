@@ -13,6 +13,8 @@ import { initValidation } from "./module/validation.js";
 import { initMask } from "./module/mask.js";
 import { iniStickyHeader } from "./module/sticky-header.js";
 import { initItemSlider } from "./module/item-slider.js";
+import { initPopup } from "./module/popup.js";
+import { initObserver } from "./module/observer.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -33,6 +35,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initMask();
     iniStickyHeader();
     initItemSlider();
+    initPopup();
+    initObserver();
 
     if (window.innerWidth > 767) {
         initParalax();

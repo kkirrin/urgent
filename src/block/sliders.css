@@ -20,7 +20,7 @@
     left: 0;
     width: 46px;
     height: 46px;
-    background: url('../src/img/arrow.svg');
+    background: url('src/img/arrow.svg');
     background-repeat: no-repeat;
 }
 
@@ -31,7 +31,7 @@
     left: 0;
     width: 46px;
     height: 46px;
-    background: url('../src/img/arrow.svg');
+    background: url('src/img/arrow.svg');
     background-repeat: no-repeat;
     transform: rotate(180deg);
 }
