@@ -12,20 +12,53 @@
 
 @keyframes unionLeft {
     from {
-        transform: translateX() translateY();
+      opacity: 0;
+      transform: translateX(-20px) translateY(0);
     }
-
     to {
-        transform: translateX(100px) translateY(0);
+      opacity: 1;
+      transform: translateX(100px) translateY(0);
     }
-}
-
-@keyframes unionRight {
+  }
+  
+  @keyframes unionRight {
     from {
-        transform: translateX() translateY();
+      opacity: 0;
+      transform: translateX(20px) translateY(0);
     }
-
     to {
-        transform: translateX(-100px) translateY(0);
+      opacity: 1;
+      transform: translateX(-100px) translateY(0);
     }
-}
+  }
+  
+  .animation-left {
+    animation: unionLeft 1s ease forwards;
+  }
+  
+  .animation-right {
+    animation: unionRight 1s ease forwards;
+  }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+ /* Анимация для появления */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+  
