@@ -268,8 +268,7 @@
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-start:var(--swiper-centered-offset-before);
-          margin-inline-start:var(--swiper-centered-offset-before)
+  margin-inline-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-horizontal>.swiper-wrapper::before{
@@ -279,8 +278,7 @@
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child{
-  -webkit-margin-before:var(--swiper-centered-offset-before);
-          margin-block-start:var(--swiper-centered-offset-before)
+  margin-block-start:var(--swiper-centered-offset-before)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper::before{
@@ -1085,21 +1083,55 @@ button.swiper-pagination-bullet{
 
 @keyframes unionLeft {
   from {
-    transform: translateX() translateY();
+    opacity: 0;
+    transform: translateX(-20px) translateY(0);
   }
 
   to {
+    opacity: 1;
     transform: translateX(100px) translateY(0);
   }
 }
 
 @keyframes unionRight {
   from {
-    transform: translateX() translateY();
+    opacity: 0;
+    transform: translateX(20px) translateY(0);
   }
 
   to {
+    opacity: 1;
     transform: translateX(-100px) translateY(0);
+  }
+}
+
+.animation-left {
+  animation: unionLeft 1s ease forwards;
+}
+
+.animation-right {
+  animation: unionRight 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Анимация для появления */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
@@ -3176,7 +3208,7 @@ body {
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -3790,6 +3822,18 @@ body {
   z-index: 10;
 }
 
+.z-50{
+  z-index: 50;
+}
+
+.-z-10{
+  z-index: -10;
+}
+
+.-z-0{
+  z-index: 0;
+}
+
 .m-0{
   margin: 0px;
 }
@@ -4399,5 +4443,10 @@ body {
 @media (min-width: 1280px){
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:text-main-black{
+    --tw-text-opacity: 1;
+    color: rgb(32 32 32 / var(--tw-text-opacity));
   }
 }
